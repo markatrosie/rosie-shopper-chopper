@@ -1,0 +1,9 @@
+.pdf-view {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+#pdf-layer, #promos-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
