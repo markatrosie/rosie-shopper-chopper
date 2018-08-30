@@ -8,7 +8,8 @@ import { promos } from '../mock-data';
   styleUrls: ['./promo-list.component.css']
 })
 export class PromoListComponent implements OnInit {
-  promos : Promo[] = promos
+  promos: Promo[] = promos
+  size: number = 8
 
   constructor() { 
     console.log(this.promos);

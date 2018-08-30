@@ -1,4 +1,4 @@
-.app-promo-list {
+select {
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -8,7 +8,7 @@
   padding: 0.5em;
 }
 
-.app-promo-list option {
+option {
   height: 2em;
   padding: 1em .5em 0 .5em;
   overflow: hidden;
