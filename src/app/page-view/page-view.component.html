@@ -1,4 +1,8 @@
 <div>
   <canvas></canvas>
-  <canvas></canvas>
+  <pdf-viewer
+    [src]="editorService.getPdfData()"
+    [show-all]="false"
+    [page]="editorService.currentPage">
+  </pdf-viewer>
 </div>

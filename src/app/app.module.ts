@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 import { AppComponent } from './app.component';
 import { PromoListComponent } from './promo-list/promo-list.component';
@@ -22,7 +23,8 @@ import { PageViewComponent } from './page-view/page-view.component';
     PageViewComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

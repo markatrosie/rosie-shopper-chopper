@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EditorService } from '../editor.service';
 
 @Component({
   selector: 'app-page-view',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private editorService: EditorService) { }
 
   ngOnInit() {
   }
