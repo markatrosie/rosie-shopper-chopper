@@ -6,7 +6,7 @@ import { PdfViewerModule, PDFDocumentProxy } from 'ng2-pdf-viewer';
 @Injectable({
   providedIn: 'root'
 })
-export class EditorService {
+export class ProjectService {
   // The File object for the local file the user has selected to work on.
   private pdfFile: File;
 

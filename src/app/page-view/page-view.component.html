@@ -1,9 +1,9 @@
 <div>
   <canvas></canvas>
   <pdf-viewer
-    [src]="editorService.getPdfData()"
+    [src]="projectService.getPdfData()"
     [show-all]="false"
-    [page]="editorService.currentPage"
+    [page]="projectService.currentPage"
     [original-size]="false"
     [fit-to-page]="true"
     (after-load-complete)="pdfLoaded($event)">

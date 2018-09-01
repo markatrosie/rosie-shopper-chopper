@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EditorService } from '../editor.service';
+import { ProjectService } from '../project.service';
 import { PDFDocumentProxy } from 'pdfjs-dist';
 
 @Component({
@@ -8,12 +8,12 @@ import { PDFDocumentProxy } from 'pdfjs-dist';
   styleUrls: ['./page-view.component.css']
 })
 export class PageViewComponent implements OnInit {
-  constructor(private editorService: EditorService) { }
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
   }
 
   pdfLoaded(pdfDocument: PDFDocumentProxy) {
-    this.editorService.setPdfDocument(pdfDocument);
+    this.projectService.setPdfDocument(pdfDocument);
   }
 }

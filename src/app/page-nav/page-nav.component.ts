@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EditorService } from '../editor.service';
+import { ProjectService } from '../project.service';
 import { PDFDocumentProxy } from 'pdfjs-dist';
 
 @Component({
@@ -8,13 +8,13 @@ import { PDFDocumentProxy } from 'pdfjs-dist';
   styleUrls: ['./page-nav.component.css']
 })
 export class PageNavComponent implements OnInit {
-  constructor(private editorService: EditorService) { }
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
   }
 
   getPageList(): number[] {
-    const pdfDocument: PDFDocumentProxy = this.editorService.getPdfDocument();
+    const pdfDocument: PDFDocumentProxy = this.projectService.getPdfDocument();
     
     if (pdfDocument) {
       const sizedList: null[] = new Array(pdfDocument.numPages);

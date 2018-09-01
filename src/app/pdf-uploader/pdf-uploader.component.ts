@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EditorService } from '../editor.service';
+import { ProjectService } from '../project.service';
 
 @Component({
   selector: 'app-pdf-uploader',
@@ -8,14 +8,14 @@ import { EditorService } from '../editor.service';
 })
 export class PdfUploaderComponent implements OnInit {
 
-  constructor(private editorService: EditorService) { }
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
   }
 
   fileChanged(e) {
     const pdf: File = e.target.files[0];
-    this.editorService.setPdf(pdf);
+    this.projectService.setPdf(pdf);
   }
 
 }

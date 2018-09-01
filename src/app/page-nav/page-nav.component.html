@@ -1,6 +1,6 @@
-<ul *ngIf="editorService.getPdfDocument()">
+<ul *ngIf="projectService.getPdfDocument()">
   <li *ngFor="let page of getPageList()">
-    <a (click)="editorService.setPage(page + 1)" href="javascript:void(0)">
+    <a (click)="projectService.setPage(page + 1)" href="javascript:void(0)">
       {{page + 1}}
     </a>
   </li>
