@@ -1,5 +1,8 @@
 <div [ngClass]="{ loaded: projectService.getPdfDocument() }">
-  <app-region-layer></app-region-layer>
+  <app-region-layer
+    [allPromos]="projectService.getPromos()"
+    [activePromo]="projectService.getSelectedPromo()"
+  ></app-region-layer>
   <pdf-viewer
     [src]="projectService.getPdfData()"
     [show-all]="false"
