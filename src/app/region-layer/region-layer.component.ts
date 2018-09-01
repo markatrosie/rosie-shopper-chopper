@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { fabric } from 'fabric';
 
 @Component({
   selector: 'app-region-layer',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./region-layer.component.css']
 })
 export class RegionLayerComponent implements OnInit {
+  @ViewChild('canvas') canvasEl: ElementRef;
 
-  constructor() { }
+  fabric: fabric.Canvas;
+
+  constructor() {}
 
   ngOnInit() {
+    this.fabric = new fabric.Canvas(this.canvasEl.nativeElement);
   }
-
 }

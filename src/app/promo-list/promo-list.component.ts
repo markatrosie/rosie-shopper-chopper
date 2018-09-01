@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Promo } from '../promo';
-import { promos } from '../mock-data';
+import { ProjectService} from '../project.service';
 
 @Component({
   selector: 'app-promo-list',
@@ -8,10 +7,10 @@ import { promos } from '../mock-data';
   styleUrls: ['./promo-list.component.css']
 })
 export class PromoListComponent implements OnInit {
-  promos: Promo[] = promos
   size: number = 8
+
+  constructor(private projectService: ProjectService) {}
 
   ngOnInit() {
   }
-
 }

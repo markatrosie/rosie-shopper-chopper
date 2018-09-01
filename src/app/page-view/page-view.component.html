@@ -3,7 +3,7 @@
   <pdf-viewer
     [src]="projectService.getPdfData()"
     [show-all]="false"
-    [page]="projectService.currentPage"
+    [page]="projectService.getCurrentPage() "
     [original-size]="false"
     [fit-to-page]="true"
     (after-load-complete)="pdfLoaded($event)">

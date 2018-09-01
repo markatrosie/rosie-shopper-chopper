@@ -22,6 +22,9 @@ export class ProjectService {
   // The  list of promotions that the user has uploaded.
   private promos: Promo[];
 
+  // The index within promos of the currently selected promo.
+  private selectedPromoIndex: number;
+
   constructor() { }
 
   setPdf(pdf: File) {
@@ -38,12 +41,24 @@ export class ProjectService {
     this.pdfDocument = pdfDocument;
   }
 
+  setPromos(promos: Promo[]) {
+    this.promos = promos;
+  }
+
+  getPromos(): Promo[] {
+    return this.promos;
+  }
+
   getPdfDocument() {
     return this.pdfDocument;
   }
 
   getPdfData() {
     return this.pdfArray;
+  }
+
+  getCurrentPage() {
+    return this.currentPage;
   }
 
   async loadPdf() {
