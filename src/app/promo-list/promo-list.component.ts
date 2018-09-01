@@ -7,10 +7,12 @@ import { ProjectService} from '../project.service';
   styleUrls: ['./promo-list.component.css']
 })
 export class PromoListComponent implements OnInit {
-  size: number = 8
+  selectedPromo: any;
+  size: number = 8;
 
   constructor(private projectService: ProjectService) {}
 
   ngOnInit() {
+    setTimeout(() => { console.log('Selected promo:', this.selectedPromo); });
   }
 }

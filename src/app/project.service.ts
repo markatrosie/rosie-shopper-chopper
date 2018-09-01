@@ -23,7 +23,7 @@ export class ProjectService {
   private promos: Promo[];
 
   // The index within promos of the currently selected promo.
-  private selectedPromoIndex: number;
+  private selectedPromo: Promo;
 
   constructor() { }
 
@@ -43,6 +43,14 @@ export class ProjectService {
 
   setPromos(promos: Promo[]) {
     this.promos = promos;
+  }
+
+  setSelectedPromo(promo: Promo) {
+    this.selectedPromo = promo;
+  }
+
+  getSelectedPromo(): Promo {
+    return this.selectedPromo;
   }
 
   getPromos(): Promo[] {

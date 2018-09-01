@@ -1,3 +1,13 @@
-<select size="{{size}}">
-  <option *ngFor="let promo of projectService.getPromos()">{{promo}}</option>
+<select
+  size="{{size}}"
+  [(ngModel)]="selectedPromo" 
+  (change)="projectService.setSelectedPromo(selectedPromo)"
+  name="selectedPromo"
+>
+  <option
+    *ngFor="let promo of projectService.getPromos()"
+    [ngValue]="promo"
+  >
+    {{promo}}
+  </option>
 </select>
