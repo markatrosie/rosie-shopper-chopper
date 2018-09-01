@@ -3,6 +3,9 @@
   <pdf-viewer
     [src]="editorService.getPdfData()"
     [show-all]="false"
-    [page]="editorService.currentPage">
+    [page]="editorService.currentPage"
+    [original-size]="false"
+    [fit-to-page]="true"
+    (after-load-complete)="pdfLoaded($event)">
   </pdf-viewer>
 </div>

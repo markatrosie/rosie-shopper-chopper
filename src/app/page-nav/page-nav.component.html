@@ -1,3 +1,7 @@
-<p>
-  page-nav works!
-</p>
+<ul *ngIf="editorService.getPdfDocument()">
+  <li *ngFor="let page of getPageList()">
+    <a (click)="editorService.setPage(page + 1)" href="javascript:void(0)">
+      {{page + 1}}
+    </a>
+  </li>
+</ul>
