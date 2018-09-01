@@ -7,10 +7,6 @@ div {
   max-width: 650px;
 }
 
-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+div.loaded {
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.3);
 }

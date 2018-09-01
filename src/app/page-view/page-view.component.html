@@ -1,5 +1,5 @@
-<div>
-  <canvas></canvas>
+<div [ngClass]="{ loaded: projectService.getPdfDocument() }">
+  <app-region-layer></app-region-layer>
   <pdf-viewer
     [src]="projectService.getPdfData()"
     [show-all]="false"

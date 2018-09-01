@@ -10,6 +10,7 @@ import { WorkingPanelComponent } from './working-panel/working-panel.component';
 import { ContextPanelComponent } from './context-panel/context-panel.component';
 import { PageNavComponent } from './page-nav/page-nav.component';
 import { PageViewComponent } from './page-view/page-view.component';
+import { RegionLayerComponent } from './region-layer/region-layer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PageViewComponent } from './page-view/page-view.component';
     WorkingPanelComponent,
     ContextPanelComponent,
     PageNavComponent,
-    PageViewComponent
+    PageViewComponent,
+    RegionLayerComponent
   ],
   imports: [
     BrowserModule,

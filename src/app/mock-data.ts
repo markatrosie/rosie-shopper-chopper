@@ -4,16 +4,19 @@ const promosDefs: PromoOpts[] = [
   {
     page: 1,
     upcs: ['0855088005467', '0856312002795'],
-    title: 'Title for a promo'
+    title: 'Title for a promo',
+    region: [0, 0, 20, 20]
   },
   {
     page: 1,
     upcs: ['0028400083591'],
-    title: 'Another promo title'
+    title: 'Another promo title',
+    region: [20, 20, 20, 20]
   },
   {
     page: 1,
-    upcs: ['0855088005467', '0856312002795']
+    upcs: ['0855088005467', '0856312002795'],
+    region: [40, 40, 20, 20]
   },
   {
     page: 1,

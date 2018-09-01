@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectService } from '../project.service';
 import { PDFDocumentProxy } from 'pdfjs-dist';
+import { fabric } from 'fabric';
 
 @Component({
   selector: 'app-page-view',
