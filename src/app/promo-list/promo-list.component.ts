@@ -11,10 +11,6 @@ export class PromoListComponent implements OnInit {
   promos: Promo[] = promos
   size: number = 8
 
-  constructor() { 
-    console.log(this.promos);
-  }
-
   ngOnInit() {
   }
 
