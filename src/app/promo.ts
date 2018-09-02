@@ -1,10 +1,12 @@
 let nextId = 1;
 
+export type Region = [number, number, number, number];
+
 export interface PromoOpts {
   title?: string,
   upcs?: string[],
   page?: number,
-  region?: [number, number, number, number]
+  region?: Region
 }
 
 export class Promo {
@@ -12,7 +14,7 @@ export class Promo {
   title: string;
   upcs: string[];
   page: number;
-  region: [number, number, number, number];
+  region: Region
 
   public constructor(opts: PromoOpts) {
     this.id = nextId++;
